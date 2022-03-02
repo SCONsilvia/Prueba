@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("../imagenes/fondo1.jpg");
+}
+
+
+.header, .footer{
+    background-color: #FFF0B9;
+    height: 100px;
+    padding: 1rem;
+}
+
+/*estilos del header*/
+.header__contenedor, .footer__contenedor{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    width: auto;
+}
+
+
+.buscador{
+    position: relative;
+}
+
+
+.buscador__icono{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.buscador input{
+    width: 255px;
+    height: 23px;
+    padding-left: 25px;
+    border-radius: 11px;
+}
+
+.navegador ul li{
+    display: inline;
+    list-style: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 8px;
+    background-color: beige;
+    font-family: 'Akaya Telivigala', cursive;
+
+    cursor:pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #AC4B1C;
+}
+
+/*estilos del html index*/
+
+.variasImagenes, .variasImagenes img{
+    width: 100%;
+}
+
+
+.contenido{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobreNosotros{
+    background-color: #FFD57E;
+    border-radius: 5px;
+    width: 904px;
+    height: 304px;
+    padding: 3rem;
+
+    display: flex;
+}
+
+.informacion{
+    flex-basis: 70%;
+    padding: 0px 30px 0px 30px;
+
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion__titulo{
+    flex-basis: 20%;
+
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 48px;
+    text-align: center;
+}
+
+.informacion__parrafo{
+    flex-basis: 10%;
+
+    text-align: right;
+    font-size: 22px;
+    margin-right: 7%;
+}
+
+.informacion__parrafo2{
+    flex-basis:60%;
+
+    padding-top: 38px;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.botonCompra{
+    flex-basis: 10%;
+
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: beige;
+    width: fit-content;
+}
+
+.sobreNosotros__img{
+    flex-basis: 30%;
+    margin: auto;
+    
+}
+
+.sobreNosotros__img img{
+    width: 378px;
+}
+
+
+
+
+.contenidoDeProductos{
+    margin: 45px auto;
+    width: 1033px;
+
+    background-color: bisque;
+    border-radius: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenidoDeProductos p{
+    font-size: 30px;
+    font-family: 'Akaya Telivigala', cursive;
+    margin-left: 30px;
+}
+
+.productosLista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.producto{
+    width: 300px;
+    height: 260px;
+    margin: 10px 20px;
+    position: relative;;
+}
+
+.producto__contenedorImg, .productoCatalogo__contenedorImg{
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+}
+
+.producto__contenedorImg__img, .productoCatalogo__contenedorImg__img{
+    position: absolute;
+    width: 400px;
+    left: -53px;
+}
+
+.producto__contenedorImg__img--left{
+    position: absolute;
+    width: 442px;
+    left: -32px;
+}
+
+h3{
+    position: absolute;
+    bottom: 0;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #FCA652;
+    background-color: bisque;
+}
+
+.contenidoDeProductos__boton{
+    margin: 20px;
+}
+
+
+/*estilos del footer*/
+
+.redes__icono{
+    font-size: 60px;
+}
+
+
+/*estilos del html productos*/
+h2, .productoDetalle__der__subtitulo{
+    font-size: 30px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+.contenidoDeCatalogo{
+    max-width: 1450px;
+
+    background-color: bisque;
+    margin: 20px auto;
+    border-radius: 40px;
+    padding-bottom: 27px;
+    padding-top: 27px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.productoCatalogo{
+    width: 300px;
+    margin: 10px 10px;
+    background-color:#F6CD90;
+    padding: 14px;
+    border-radius: 14px;
+}
+
+.productoCatalogo__contenedorImg__img--top{
+    position: absolute;
+    width: 400px;
+    left: -53px;
+    top: -138px;
+}
+
+.productoCatalogo__contenedorImg__img--bottom{
+    position: absolute;
+    width: 400px;
+    left: -53px;
+    bottom: -80px;
+}
+
+
+/*Estilos del html contacto*/
+
+.contenidoDeContacto{
+    background-color: #FFD57E;
+    border-radius: 15px;
+    max-width: 700px;
+    padding: 2rem 3rem;
+    margin: 45px auto;
+}
+
+.contenidoDeContacto p{
+    font-size: 30px;
+    font-family: 'Akaya Telivigala', cursive;
+    margin-bottom: 24px;
+}
+
+.elementoContacto{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.elementoContacto label{
+    flex-basis: 165px;
+}
+
+
+.elementoBotones{
+    display: flex;
+    justify-content: center;
+}
+
+.elementoBotones input{
+    margin-left: 10px;
+}
+
+
+
+/*Estilos del html opiniones*/
+
+.opiniones{
+    max-width: 1000px;
+    margin: 45px auto;
+    background-color:#ffeba3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.persona{
+    display: flex;
+    flex-direction: column;
+    background-color: #f19b708c;
+    margin: 13px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.persona__nombre{
+    font-size: 45px;
+}
+
+.persona img{
+    width: 100px;
+}
+
+.persona video{
+    width: 200px;
+}
+
+
+
+/*Estilos de html mas*/
+
+.detallesDelProducto{
+    max-width: 1400px;
+
+    background-color: bisque;
+    margin: 20px auto;
+    border-radius: 40px;
+    padding-bottom: 27px;
+    padding-top: 27px;
+}
+
+.productoDetalle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 45px;
+}
+
+.productoDetalle__izq{
+    flex-basis: 30%;
+}
+
+.productoDetalle__izq__contenedorImg img{
+    width: 100%;
+}
+
+.productoDetalle__der{
+    flex-basis: 50%;
+}
+
+.productoDetalle__der__lista{
+    margin: 20px;
+}
