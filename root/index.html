@@ -33,11 +33,13 @@
             </div>
             
             <nav class="navegador">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="paginas/productos.html">Productos</a></li>
-                    <li><a href="paginas/contacto.html">Contactenos</a></li>
-                    <li><a href="paginas/opiniones.html">Opiniones</a></li>
+                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                <ul class="nav__lista" id="sidebar">
+                    <li class="nav__item"><a href="index.html">Inicio</a></li>
+                    <li class="nav__item"><a href="paginas/productos.html">Productos</a></li>
+                    <li class="nav__item"><a href="paginas/contacto.html">Contactenos</a></li>
+                    <li class="nav__item"><a href="paginas/opiniones.html">Opiniones</a></li>
+                    <li class="nav__item nav__item--oculto"><a class="nav__enlace btn-close-sidebar" href="#">❌</a></li>
                 </ul>
             </nav>
         </div>

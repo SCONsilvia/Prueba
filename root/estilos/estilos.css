@@ -51,8 +51,12 @@ body{
     border-radius: 11px;
 }
 
+.nav__lista{
+    display: flex;
+    flex-direction: row;
+}
+
 .navegador ul li{
-    display: inline;
     list-style: none;
     border: 2px solid white;
     border-radius: 5px;
@@ -179,7 +183,7 @@ a{
     width: 300px;
     height: 260px;
     margin: 10px 20px;
-    position: relative;;
+    position: relative;
 }
 
 .producto__contenedorImg, .productoCatalogo__contenedorImg{
@@ -346,25 +350,212 @@ h2, .productoDetalle__der__subtitulo{
 }
 
 .productoDetalle{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    margin: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    padding: 1rem;
 }
 
-.productoDetalle__izq{
-    flex-basis: 30%;
+.productoDetalle__izq h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.productoDetalle__izq__contenedorImg{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
 }
 
 .productoDetalle__izq__contenedorImg img{
     width: 100%;
 }
 
-.productoDetalle__der{
-    flex-basis: 50%;
+.productoDetalle__der__subtitulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
-.productoDetalle__der__lista{
-    margin: 20px;
+.productoDetalle__der__descripcion{
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
+
+.productoDetalle__der__lista p{
+    font-size: 2rem;
+}
+
+.productoDetalle__der__lista ul{
+    display: grid;
+    grid-template-columns: repeat(2, 12rem);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.productoDetalle__der__lista ul li{
+    list-style: none;
+}
+
+/* Menu lateral oculto*/
+
+.btn-open-sidebar{
+    display: none;
+}
+
+.nav__item--oculto{
+    display: none;
+}
+
+/*Tablet*/
+@media screen and (max-width: 1024px){
+    .contenidoDeProductos{
+        width: 90%;
+    }
+
+    .sobreNosotros{
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+
+    }
+
+    .informacion{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        flex-basis: 60%;
+    }
+
+    .informacion__parrafo2{
+        padding-top: 13px;
+        padding-bottom: 2rem;
+    }
+
+    .informacion a{
+        margin: 0 auto;
+    }
+
+    .sobreNosotros__img{
+        flex-basis: 40%;
+        padding-right: 30px;
+    }
+
+    .productosLista {
+        justify-content: space-evenly;
+    }
+
+    .detallesDelProducto {
+        margin: ;
+    }
+
+    .productoDetalle{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        padding: 1rem;
+    }
+
+    .productoDetalle__izq__contenedorImg{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 993px){
+    .sobreNosotros__img img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 845px){
+    .sobreNosotros{
+        flex-direction: column;
+    }
+
+    .informacion__parrafo2{
+        padding-bottom: 20px;
+    }
+
+    .sobreNosotros__img {
+        padding: 30px 30px 0 30px;
+    }
+
+
+    
+}
+
+/*telefono*/
+
+@media screen and (max-width: 806px){
+    /* Menu lateral */
+    .btn-open-sidebar {
+        display: inline-block;
+        background-color: beige;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav__lista {
+        background-color: #fcd992;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        transition: transform 0.5s;
+        z-index: 100;
+    }
+
+    #sidebar:target {
+        transform: translateX(0);
+    }
+
+    .nav__item--oculto {
+        display: block;
+    }
+
+    /* Fin Menu lateral */
+}
+
+@media screen and (max-width: 610px){
+    .buscador input{
+        width: auto;
+    }
+
+    .sobreNosotros, .contenidoDeProductos{
+        width: 100%;
+
+    }
+
+    .footer{
+        height: auto;
+    }
+
+    .footer__contenedor{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 435px){
+    .productoDetalle__der__lista ul{
+        grid-column-gap: 0;
+    }
+}
+
+@media screen and (max-width: 385px){
+    .buscador{
+        display: none;
+    }
+}
+
