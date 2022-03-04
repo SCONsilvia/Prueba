@@ -552,6 +552,14 @@ h2, .productoDetalle__der__subtitulo{
     .productoDetalle__der__lista ul li {
         width: 90px;
     }
+
+    .elementoContacto{
+        flex-direction: column;
+    }
+
+    .elementoContacto label{
+        flex-basis: auto;
+    }
 }
 
 @media screen and (max-width: 385px){
@@ -560,7 +568,7 @@ h2, .productoDetalle__der__subtitulo{
     }
 }
 
-@media screen and (max-width: 341px){
+@media screen and (max-width: 346px){
     .informacion__titulo{
         font-size: 31px;
     }
@@ -579,5 +587,9 @@ h2, .productoDetalle__der__subtitulo{
 
     .productoDetalle__izq__contenedorImg{
         width: 100%;
+    }
+
+    .contenidoDeContacto{
+        padding: 2rem 1rem;;
     }
 }
