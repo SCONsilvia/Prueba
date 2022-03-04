@@ -568,6 +568,18 @@ h2, .productoDetalle__der__subtitulo{
     }
 }
 
+@media screen and (max-width: 352px){
+    .productoCatalogo{
+        width: auto;
+    }
+
+    .productoCatalogo__contenedorImg__img--top {
+        left: -20%;
+        top: -60%;
+    }
+
+}
+
 @media screen and (max-width: 346px){
     .informacion__titulo{
         font-size: 31px;
