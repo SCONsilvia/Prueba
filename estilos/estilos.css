@@ -390,7 +390,7 @@ a:hover{
 /*estilos del footer*/
 
 .footer__contenedor p{
-    /*Acomodando bs*/
+    /*Acomodando bootstrap*/
     margin-bottom: 0rem;
     line-height: initial;
 }
@@ -481,39 +481,28 @@ h2, .productoDetalle__der__subtitulo{
     margin-left: 10px;
 }
 
-
-
-/*Estilos del html opiniones*/
-
-.opiniones{
-    max-width: 1000px;
-    margin: 45px auto;
-    background-color:#ffeba3;
-    padding: 10px;
-    border-radius: 10px;
+.botonForm{
+    background-color: beige;
+    color: #AC4B1C;
+    border: none;
 }
 
-.persona{
-    display: flex;
-    flex-direction: column;
-    background-color: #f19b708c;
-    margin: 13px;
-    padding: 10px;
-    border-radius: 10px;
+.botonForm:hover{
+    background-color: #AC4B1C;
+    color: beige;
 }
 
-.persona__nombre{
-    font-size: 45px;
+.areaDeTexto{
+    border: 1px solid #ced4da;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.25rem;
+    min-width: 50%;
 }
 
-.persona img{
-    width: 100px;
+.dejarComentario{
+    max-height: 158px;
+    flex-basis: 60%;
 }
-
-.persona video{
-    width: 200px;
-}
-
 
 
 /*Estilos de html mas*/
@@ -554,6 +543,48 @@ h2, .productoDetalle__der__subtitulo{
     display: inline-block;
     margin: 0 auto;
     margin-top: 2rem;
+}
+
+
+/*Estilos del html opiniones*/
+
+.opiniones{
+    max-width: 1000px;
+    margin: 45px auto;
+    background-color:#ffeba3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.opiniones > p{
+    margin-left: 7%;
+    font-size: 2rem;
+}
+
+.persona{
+    background-color: #f19b708c;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 10px 0px;
+}
+
+.persona .col-md-4{
+    display: flex;
+    align-items: center;
+}
+
+.opinionCard{
+    margin: 10px auto ; 
+    border: none;
+    border-radius: 0%;
+    padding: 5px;
+    min-height: 190px;
+}
+
+.opinionCard .card-body .card-title{
+    font-size: 2rem;
+    margin-bottom: 0px;
+    text-align: left;
 }
 
 /* Menu lateral oculto*/
@@ -682,6 +713,13 @@ h2, .productoDetalle__der__subtitulo{
     }
 
     /* Fin Menu lateral */
+}
+
+@media screen and (max-width: 768px){
+    /*Opiniones Bootstrap acomodando*/
+    .opinionCard{
+        min-height: initial;
+    }
 }
 
 @media screen and (max-width: 610px){
