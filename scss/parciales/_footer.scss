@@ -1,0 +1,20 @@
+/*estilos del footer*/
+.contactos p:nth-child(1), .redes p{
+    font-size: 1.3rem;
+}
+
+.footer__contenedor p{
+    /*Acomodando bootstrap*/
+    margin-bottom: 0rem;
+}
+
+.redes__icono{
+    font-size: 60px;
+
+    /*Acomodando bootstrap*/
+    line-height: initial;
+}
+
+.footer a{
+    color: black;
+}

@@ -1,0 +1,100 @@
+/*estilos del header*/
+.header, .footer{
+    background-color: #FFF0B9;
+    height: 100px;
+    padding: 1rem;
+
+    /*Acomodando bootstrap*/
+    box-sizing: content-box;
+}
+
+.header__contenedor, .footer__contenedor{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    width: auto;
+}
+
+
+.buscador{
+    position: relative;
+
+    /*Acomodando bootstrap*/
+    box-sizing: content-box;
+}
+
+
+.buscador__icono{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    /*Acomodando bootstrap*/
+    box-sizing: content-box;
+    line-height: initial;
+}
+
+#buscador{
+    /*Acomodando bootstrap*/
+    box-sizing: content-box;
+}
+
+.buscador input{
+    width: 255px;
+    height: 23px;
+    padding-left: 25px;
+    border-radius: 11px;
+}
+
+.nav__lista{
+    display: flex;
+    flex-direction: row;
+}
+
+.navegador ul{
+    /*Acomodando bootstrap*/
+    margin-bottom:0rem;
+    padding-left: 0rem;
+}
+
+.navegador ul li{
+    list-style: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 8px;
+    background-color: beige;
+    font-family: 'Akaya Telivigala', cursive;
+
+    cursor:pointer;
+}
+
+.nav__item{
+    transition: transform 0.5s;
+
+    /*Acomodando bootstrap*/
+    line-height: initial;
+}
+
+.nav__item:hover{
+    transform: scale(1.3, 1.3);
+}
+
+a{
+    text-decoration: none;
+    color: #AC4B1C;
+}
+
+a:hover{
+    /*Acomodando bootstrap*/
+    color: #AC4B1C;
+}

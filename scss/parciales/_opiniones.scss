@@ -1,0 +1,52 @@
+
+
+/*Estilos del html opiniones*/
+
+.opiniones{
+    max-width: 1000px;
+    margin: 45px auto;
+    background-color:#ffeba3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.opiniones > p{
+    margin-left: 7%;
+    font-size: 2rem;
+}
+
+.persona{
+    background-color: #f19b708c;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 10px 0px;
+}
+
+.persona .col-md-4{
+    display: flex;
+    align-items: center;
+}
+
+.opinionCard{
+    margin: 10px auto ; 
+    border: none;
+    border-radius: 0%;
+    padding: 5px;
+    min-height: 190px;
+}
+
+.opinionCard .card-body .card-title{
+    font-size: 2rem;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+/* Menu lateral oculto*/
+
+.btn-open-sidebar{
+    display: none;
+}
+
+.nav__item--oculto{
+    display: none;
+}
