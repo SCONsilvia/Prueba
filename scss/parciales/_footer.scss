@@ -18,3 +18,28 @@
 .footer a{
     color: black;
 }
+
+.footer{
+    background-color: #FFF0B9;
+    height: 100px;
+    padding: 1rem;
+
+    /*Acomodando bootstrap*/
+    box-sizing: content-box;
+}
+
+.footer__contenedor{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+    width: auto;
+}
