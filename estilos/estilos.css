@@ -107,46 +107,108 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.sobreNosotros {
-  background-color: #FFD57E;
-  border-radius: 5px;
-  width: 904px;
-  height: 304px;
-  padding: 3rem;
-  display: flex;
-  /*Acomodando bootstrap*/
-  box-sizing: content-box; }
-
-.informacion {
-  flex-basis: 70%;
-  padding: 0px 30px 0px 30px;
-  display: flex;
-  flex-direction: column; }
-
-.informacion__titulo {
-  flex-basis: 20%;
-  font-family: 'Akaya Telivigala', cursive;
-  font-size: 48px;
-  text-align: center;
-  /*Acomodando bootstrap*/
-  margin-bottom: 0rem; }
-
-.informacion__parrafo {
-  flex-basis: 10%;
-  text-align: right;
-  font-size: 22px;
-  margin-right: 7%;
-  animation-name: animacion1;
-  animation-duration: 0.5s;
-  /*Acomodando bootstrap*/
-  margin-bottom: 0rem; }
-
-.informacion__parrafo2 {
-  flex-basis: 60%;
-  padding-top: 38px;
-  line-height: 25px;
-  font-size: 17px; }
+  .contenido .sobreNosotros {
+    background-color: #FFD57E;
+    border-radius: 5px;
+    width: 904px;
+    height: 304px;
+    padding: 3rem;
+    display: flex;
+    /*Acomodando bootstrap*/
+    box-sizing: content-box; }
+    .contenido .sobreNosotros .informacion {
+      flex-basis: 70%;
+      padding: 0px 30px 0px 30px;
+      display: flex;
+      flex-direction: column; }
+      .contenido .sobreNosotros .informacion__titulo {
+        flex-basis: 20%;
+        font-family: 'Akaya Telivigala', cursive;
+        font-size: 48px;
+        text-align: center;
+        /*Acomodando bootstrap*/
+        margin-bottom: 0rem; }
+      .contenido .sobreNosotros .informacion__parrafo {
+        flex-basis: 10%;
+        text-align: right;
+        font-size: 22px;
+        margin-right: 7%;
+        animation-name: animacion1;
+        animation-duration: 0.5s;
+        /*Acomodando bootstrap*/
+        margin-bottom: 0rem; }
+      .contenido .sobreNosotros .informacion__parrafo2 {
+        flex-basis: 60%;
+        padding-top: 38px;
+        line-height: 25px;
+        font-size: 17px; }
+    .contenido .sobreNosotros__img {
+      flex-basis: 30%;
+      margin: auto; }
+      .contenido .sobreNosotros__img img {
+        width: 378px; }
+  .contenido .contenidoDeProductos {
+    margin: 45px auto;
+    width: 1033px;
+    background-color: bisque;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenido .contenidoDeProductos p {
+      font-size: 2.5rem;
+      font-family: 'Akaya Telivigala', cursive;
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+      /*margin-left: 30px;*/ }
+    .contenido .contenidoDeProductos .productosLista {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .contenido .contenidoDeProductos .productosLista .producto {
+        width: 300px;
+        height: 260px;
+        margin: 10px 20px;
+        position: relative;
+        /*animacion de linea*/ }
+        .contenido .contenidoDeProductos .productosLista .producto::after {
+          content: "";
+          position: absolute;
+          background-color: #AC4B1C;
+          top: 100%;
+          left: 0%;
+          width: 100%;
+          height: 3px;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.5s; }
+        .contenido .contenidoDeProductos .productosLista .producto:hover::after {
+          transform-origin: left;
+          transform: scaleX(1); }
+        .contenido .contenidoDeProductos .productosLista .producto__contenedorImg {
+          height: 260px;
+          overflow: hidden;
+          position: relative; }
+          .contenido .contenidoDeProductos .productosLista .producto__contenedorImg__img {
+            position: absolute;
+            width: 400px;
+            left: -53px; }
+            .contenido .contenidoDeProductos .productosLista .producto__contenedorImg__img--left {
+              position: absolute;
+              width: 442px;
+              left: -32px; }
+        .contenido .contenidoDeProductos .productosLista .producto h3 {
+          position: absolute;
+          bottom: 0;
+          font-family: 'Akaya Telivigala', cursive;
+          color: #FCA652;
+          background-color: bisque;
+          font-size: 1.25rem;
+          /*Acomodando bootstrap*/
+          margin-bottom: 0rem;
+          line-height: inherit; }
+    .contenido .contenidoDeProductos .contenidoDeProductos__boton {
+      margin: 20px; }
 
 .botonCompra {
   flex-basis: 10%;
@@ -155,123 +217,6 @@ body {
   padding: 7px;
   background-color: beige;
   width: fit-content; }
-
-.sobreNosotros__img {
-  flex-basis: 30%;
-  margin: auto; }
-
-.sobreNosotros__img img {
-  width: 378px; }
-
-.contenidoDeProductos {
-  margin: 45px auto;
-  width: 1033px;
-  background-color: bisque;
-  border-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.contenidoDeProductos p {
-  font-size: 2.5rem;
-  font-family: 'Akaya Telivigala', cursive;
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-  /*margin-left: 30px;*/ }
-
-.productosLista {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.producto {
-  width: 300px;
-  height: 260px;
-  margin: 10px 20px;
-  position: relative; }
-
-/*animacion de linea*/
-.producto::after {
-  content: "";
-  position: absolute;
-  background-color: #AC4B1C;
-  top: 100%;
-  left: 0%;
-  width: 100%;
-  height: 3px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s; }
-
-.producto:hover::after {
-  transform-origin: left;
-  transform: scaleX(1); }
-
-/* Intentos de hacer la misma animacion
-.producto:hover::after{
-    content: "";
-    position: absolute;
-    background-color: #AC4B1C;
-    top: 100%;
-    left: 0%;
-    width: 100%;
-    height: 3px;
-    animation-name: animacionLinea;
-    animation-duration: 0.5s;
-}
-
-@keyframes animacionLinea {
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
-}*/
-/*
-.producto::after{
-    content: "";
-    position: absolute;
-    background-color: #AC4B1C;
-    top: 100%;
-    left: 0%;
-    width: 0%;
-    height: 3px;
-    transition: width 0.5s;
-}
-
-.producto:hover::after{
-    width: 100%;
-}
-*/
-.producto__contenedorImg, .productoCatalogo__contenedorImg {
-  height: 260px;
-  overflow: hidden;
-  position: relative; }
-
-.producto__contenedorImg__img, .productoCatalogo__contenedorImg__img {
-  position: absolute;
-  width: 400px;
-  left: -53px; }
-
-.producto__contenedorImg__img--left {
-  position: absolute;
-  width: 442px;
-  left: -32px; }
-
-.producto h3 {
-  position: absolute;
-  bottom: 0;
-  font-family: 'Akaya Telivigala', cursive;
-  color: #FCA652;
-  background-color: bisque;
-  font-size: 1.25rem;
-  /*Acomodando bootstrap*/
-  margin-bottom: 0rem;
-  line-height: inherit; }
-
-.contenidoDeProductos__boton {
-  margin: 20px; }
 
 a {
   text-decoration: none;
@@ -322,6 +267,16 @@ h2 {
   width: 400px;
   left: -53px;
   bottom: -80px; }
+
+.productoCatalogo__contenedorImg {
+  height: 260px;
+  overflow: hidden;
+  position: relative; }
+
+.productoCatalogo__contenedorImg__img {
+  position: absolute;
+  width: 400px;
+  left: -53px; }
 
 /*Estilos de html mas*/
 .card {

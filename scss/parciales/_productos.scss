@@ -40,3 +40,15 @@ h2{
     left: -53px;
     bottom: -80px;
 }
+
+.productoCatalogo__contenedorImg{
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+}
+
+.productoCatalogo__contenedorImg__img{
+    position: absolute;
+    width: 400px;
+    left: -53px;
+}
