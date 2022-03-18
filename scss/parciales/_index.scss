@@ -1,6 +1,10 @@
 /*estilos del html index*/
 .carrucel{
     margin-bottom: 1rem;
+    
+    @media screen and (max-width: 806px){
+        margin-bottom: 0rem;
+    }
 }
 
 .contenido{
@@ -175,6 +179,10 @@
                 margin: 10px 20px;
                 position: relative;
 
+                @media screen and (max-width: 346px){
+                    width: 100%;
+                }
+
                 /*animacion de linea*/
                 &::after{
                     content: "";
@@ -231,15 +239,4 @@
             margin: 20px;
         }
     }
-}
-
-
-.botonCompra{
-    flex-basis: 10%;
-
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 7px;
-    background-color: beige;
-    width: fit-content;
 }

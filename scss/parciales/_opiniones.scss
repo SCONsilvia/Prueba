@@ -1,52 +1,54 @@
-
-
 /*Estilos del html opiniones*/
-
 .opiniones{
     max-width: 1000px;
     margin: 45px auto;
     background-color:#ffeba3;
     padding: 10px;
     border-radius: 10px;
-}
 
-.opiniones > p{
-    margin-left: 7%;
-    font-size: 2rem;
-}
+    @media screen and (max-width: 768px){
+        /*Opiniones Bootstrap acomodando*/
+        min-height: initial;
+    }
 
-.persona{
-    background-color: #f19b708c;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    padding: 10px 0px;
-}
+    & > p{
+        margin-left: 7%;
+        font-size: 2rem;
 
-.persona .col-md-4{
-    display: flex;
-    align-items: center;
-}
+        @media screen and (max-width: 352px){
+            font-size: 1.5rem;
+        }
+    }
 
-.opinionCard{
-    margin: 10px auto ; 
-    border: none;
-    border-radius: 0%;
-    padding: 5px;
-    min-height: 190px;
-}
+    h5{
+        @media screen and (max-width: 352px){
+            font-size: 1.5rem;
+        }
+    }
 
-.opinionCard .card-body .card-title{
-    font-size: 2rem;
-    margin-bottom: 0px;
-    text-align: left;
-}
+    .persona{
+        background-color: #f19b708c;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        padding: 10px 0px;
 
-/* Menu lateral oculto*/
+        .col-md-4{
+            display: flex;
+            align-items: center;
+        }
 
-.btn-open-sidebar{
-    display: none;
-}
+        .opinionCard{
+            margin: 10px auto ; 
+            border: none;
+            border-radius: 0%;
+            padding: 5px;
+            min-height: 190px;
 
-.nav__item--oculto{
-    display: none;
+            .card-title{
+                font-size: 2rem;
+                margin-bottom: 0px;
+                text-align: left;
+            }
+        }
+    }
 }

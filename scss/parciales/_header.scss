@@ -1,6 +1,6 @@
 /*estilos del header*/
 .header{
-    background-color: #FFF0B9;
+    background-color: $colorHeaderFooter;
     height: 100px;
     padding: 1rem;
 
@@ -63,7 +63,7 @@
             @media screen and (max-width: 806px){
                 /* Menu lateral */
                 display: inline-block;
-                background-color: beige;
+                background-color: $colorBotones;
                 border: 2px solid white;
                 border-radius: 5px;
                 padding: 0.5rem 1rem;
@@ -110,7 +110,7 @@
                 border-radius: 5px;
                 padding: 7px;
                 margin: 8px;
-                background-color: beige;
+                background-color: $colorBotones;
                 font-family: 'Akaya Telivigala', cursive;
             
                 cursor:pointer;

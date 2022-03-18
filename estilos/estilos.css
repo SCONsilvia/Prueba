@@ -146,6 +146,9 @@ body {
 /*estilos del html index*/
 .carrucel {
   margin-bottom: 1rem; }
+  @media screen and (max-width: 806px) {
+    .carrucel {
+      margin-bottom: 0rem; } }
 
 .contenido {
   max-width: 1200px;
@@ -271,6 +274,9 @@ body {
         margin: 10px 20px;
         position: relative;
         /*animacion de linea*/ }
+        @media screen and (max-width: 346px) {
+          .contenido .contenidoDeProductos .productosLista .producto {
+            width: 100%; } }
         .contenido .contenidoDeProductos .productosLista .producto::after {
           content: "";
           position: absolute;
@@ -310,14 +316,6 @@ body {
     .contenido .contenidoDeProductos .contenidoDeProductos__boton {
       margin: 20px; }
 
-.botonCompra {
-  flex-basis: 10%;
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 7px;
-  background-color: beige;
-  width: fit-content; }
-
 a {
   text-decoration: none;
   color: #AC4B1C; }
@@ -326,18 +324,15 @@ a:hover {
   /*Acomodando bootstrap*/
   color: #AC4B1C; }
 
-/* Menu lateral oculto*/
-.btn-open-sidebar {
-  display: none; }
-
-.nav__item--oculto {
-  display: none; }
+.botonCompra {
+  flex-basis: 10%;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: beige;
+  width: fit-content; }
 
 /*estilos del html productos*/
-h2 {
-  font-size: 30px;
-  font-family: 'Akaya Telivigala', cursive; }
-
 .contenidoDeCatalogo {
   max-width: 1450px;
   background-color: bisque;
@@ -348,35 +343,44 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.productoCatalogo {
-  width: 300px;
-  margin: 10px 10px;
-  background-color: #F6CD90;
-  padding: 14px;
-  border-radius: 14px; }
-
-.productoCatalogo__contenedorImg__img--top {
-  position: absolute;
-  width: 400px;
-  left: -53px;
-  top: -138px; }
-
-.productoCatalogo__contenedorImg__img--bottom {
-  position: absolute;
-  width: 400px;
-  left: -53px;
-  bottom: -80px; }
-
-.productoCatalogo__contenedorImg {
-  height: 260px;
-  overflow: hidden;
-  position: relative; }
-
-.productoCatalogo__contenedorImg__img {
-  position: absolute;
-  width: 400px;
-  left: -53px; }
+  .contenidoDeCatalogo h2 {
+    font-size: 30px;
+    font-family: 'Akaya Telivigala', cursive; }
+  .contenidoDeCatalogo .productosLista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .contenidoDeCatalogo .productosLista .productoCatalogo {
+      width: 300px;
+      margin: 10px 10px;
+      background-color: #F6CD90;
+      padding: 14px;
+      border-radius: 14px; }
+      @media screen and (max-width: 352px) {
+        .contenidoDeCatalogo .productosLista .productoCatalogo {
+          width: auto; } }
+      .contenidoDeCatalogo .productosLista .productoCatalogo .productoCatalogo__contenedorImg {
+        height: 260px;
+        overflow: hidden;
+        position: relative; }
+        .contenidoDeCatalogo .productosLista .productoCatalogo .productoCatalogo__contenedorImg__img--top {
+          position: absolute;
+          width: 400px;
+          left: -53px;
+          top: -138px; }
+          @media screen and (max-width: 352px) {
+            .contenidoDeCatalogo .productosLista .productoCatalogo .productoCatalogo__contenedorImg__img--top {
+              left: -20%;
+              top: -60%; } }
+        .contenidoDeCatalogo .productosLista .productoCatalogo .productoCatalogo__contenedorImg__img--bottom {
+          position: absolute;
+          width: 400px;
+          left: -53px;
+          bottom: -80px; }
+        .contenidoDeCatalogo .productosLista .productoCatalogo .productoCatalogo__contenedorImg__img {
+          position: absolute;
+          width: 400px;
+          left: -53px; }
 
 /*Estilos de html mas*/
 .card {
@@ -414,39 +418,37 @@ h2 {
   background-color: #ffeba3;
   padding: 10px;
   border-radius: 10px; }
-
-.opiniones > p {
-  margin-left: 7%;
-  font-size: 2rem; }
-
-.persona {
-  background-color: #f19b708c;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  padding: 10px 0px; }
-
-.persona .col-md-4 {
-  display: flex;
-  align-items: center; }
-
-.opinionCard {
-  margin: 10px auto;
-  border: none;
-  border-radius: 0%;
-  padding: 5px;
-  min-height: 190px; }
-
-.opinionCard .card-body .card-title {
-  font-size: 2rem;
-  margin-bottom: 0px;
-  text-align: left; }
-
-/* Menu lateral oculto*/
-.btn-open-sidebar {
-  display: none; }
-
-.nav__item--oculto {
-  display: none; }
+  @media screen and (max-width: 768px) {
+    .opiniones {
+      /*Opiniones Bootstrap acomodando*/
+      min-height: initial; } }
+  .opiniones > p {
+    margin-left: 7%;
+    font-size: 2rem; }
+    @media screen and (max-width: 352px) {
+      .opiniones > p {
+        font-size: 1.5rem; } }
+  @media screen and (max-width: 352px) {
+    .opiniones h5 {
+      font-size: 1.5rem; } }
+  .opiniones .persona {
+    background-color: #f19b708c;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 10px 0px; }
+    .opiniones .persona .col-md-4 {
+      display: flex;
+      align-items: center; }
+    .opiniones .persona .opinionCard {
+      margin: 10px auto;
+      border: none;
+      border-radius: 0%;
+      padding: 5px;
+      min-height: 190px; }
+      .opiniones .persona .opinionCard .card-title {
+        font-size: 2rem;
+        margin-bottom: 0px;
+        text-align: left; }
 
 /*Estilos del html contacto*/
 .contenidoDeContacto {
@@ -455,80 +457,44 @@ h2 {
   max-width: 700px;
   padding: 2rem 3rem;
   margin: 45px auto; }
-
-.contenidoDeContacto p {
-  font-size: 30px;
-  font-family: 'Akaya Telivigala', cursive;
-  margin-bottom: 24px; }
-
-.elementoContacto {
-  display: flex;
-  margin-bottom: 5px; }
-
-.elementoContacto label {
-  flex-basis: 165px; }
-
-.elementoBotones {
-  display: flex;
-  justify-content: center; }
-
-.elementoBotones input {
-  margin-left: 10px; }
-
-.botonForm {
-  background-color: beige;
-  color: #AC4B1C;
-  border: none; }
-
-.botonForm:hover {
-  background-color: #AC4B1C;
-  color: beige; }
-
-.botonForm:focus {
-  background-color: #AC4B1C;
-  color: beige;
-  box-shadow: 0 0 0 0.2rem beige; }
-
-.areaDeTexto {
-  border: 1px solid #ced4da;
-  padding: 0.3rem 0.6rem;
-  border-radius: 0.25rem;
-  min-width: 50%; }
-
-.dejarComentario {
-  max-height: 158px;
-  flex-basis: 60%; }
-
-/*Tablet*/
-/*telefono*/
-@media screen and (max-width: 806px) {
-  .carrucel {
-    margin-bottom: 0rem; } }
-
-@media screen and (max-width: 768px) {
-  /*Opiniones Bootstrap acomodando*/
-  .opinionCard {
-    min-height: initial; } }
-
-@media screen and (max-width: 435px) {
-  .elementoContacto {
-    flex-direction: column; }
-  .elementoContacto label {
-    flex-basis: auto; } }
-
-@media screen and (max-width: 352px) {
-  .opiniones p:nth-child(1) {
-    font-size: 1.5rem; }
-  .opiniones h5 {
-    font-size: 1.5rem; }
-  .productoCatalogo {
-    width: auto; }
-  .productoCatalogo__contenedorImg__img--top {
-    left: -20%;
-    top: -60%; } }
-
-@media screen and (max-width: 346px) {
-  .producto {
-    width: 100%; }
-  .contenidoDeContacto {
-    padding: 2rem 1rem; } }
+  @media screen and (max-width: 346px) {
+    .contenidoDeContacto {
+      padding: 2rem 1rem; } }
+  .contenidoDeContacto p {
+    font-size: 30px;
+    font-family: 'Akaya Telivigala', cursive;
+    margin-bottom: 24px; }
+  .contenidoDeContacto .elementoContacto {
+    display: flex;
+    margin-bottom: 5px; }
+    @media screen and (max-width: 435px) {
+      .contenidoDeContacto .elementoContacto {
+        flex-direction: column; } }
+    .contenidoDeContacto .elementoContacto label {
+      flex-basis: 165px; }
+      @media screen and (max-width: 435px) {
+        .contenidoDeContacto .elementoContacto label {
+          flex-basis: auto; } }
+    .contenidoDeContacto .elementoContacto .areaDeTexto {
+      border: 1px solid #ced4da;
+      padding: 0.3rem 0.6rem;
+      border-radius: 0.25rem;
+      min-width: 50%; }
+    .contenidoDeContacto .elementoContacto .dejarComentario {
+      max-height: 158px;
+      flex-basis: 60%; }
+  .contenidoDeContacto .elementoBotones {
+    display: flex;
+    justify-content: center; }
+    .contenidoDeContacto .elementoBotones .botonForm {
+      background-color: beige;
+      color: #AC4B1C;
+      border: none;
+      margin-left: 10px; }
+      .contenidoDeContacto .elementoBotones .botonForm:hover {
+        background-color: #AC4B1C;
+        color: beige; }
+      .contenidoDeContacto .elementoBotones .botonForm:focus {
+        background-color: #AC4B1C;
+        color: beige;
+        box-shadow: 0 0 0 0.2rem beige; }
